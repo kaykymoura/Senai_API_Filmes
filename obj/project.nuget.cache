@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uHtyAvc0OIE=",
+  "dgSpecHash": "hPNsCdo87KA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\50526653850\\Desktop\\api_filmes\\api_filmes_senai1\\API_Filmes\\api_filmes_senai1.csproj",
+  "projectFilePath": "C:\\Users\\50526653850\\Desktop\\Senai_API_Filmes\\api_filmes_senai1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\50526653850\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\50526653850\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\50526653850\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\50526653850\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\50526653850\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\50526653850\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

@@ -77,9 +77,9 @@ namespace api_filmes_senai1.Controllers
 
                 return NoContent();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                return BadRequest(e.Message);
             }
         }
         [HttpPut("{id}")]
@@ -96,19 +96,19 @@ namespace api_filmes_senai1.Controllers
                 return BadRequest(e.Message);
             }
         }
-        //criar endpoint para o genero
-        [HttpGet("{id}")]
-        public IActionResult Get(Guid idGenero)
+        //criar endpoint e testar para filtro  de filmes
+        [HttpGet("ListarPorGenero/{id}")]
+        public IActionResult GetByGenero(Guid id)
         {
             try
             {
-                List<Filme> ListarPorGenero = _filmeRepository.Listar();
+                List<Filme> ListaDeFilmePorGenero = _filmeRepository.ListarPorGenero(id);
 
-                return Ok(ListarPorGenero);
+                return Ok(ListaDeFilmePorGenero);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(e.Message);
             }
         }
 

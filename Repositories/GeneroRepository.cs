@@ -1,5 +1,4 @@
-﻿using System.Linq.Expressions;
-using API_Filmes_SENAI.Context;
+﻿using API_Filmes_SENAI.Context;
 using api_filmes_senai1.Domains;
 using api_filmes_senai1.interfaces;
 
