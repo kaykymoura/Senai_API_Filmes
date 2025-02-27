@@ -15,12 +15,22 @@ namespace api_filmes_senai1.Repositories
             _context = context;
         }
 
-
         public Usuario BuscarPorEmailESenha(string email, string senha)
         {
             try
             {
+                Usuario usuarioBuscado = _context.Usuario.FirstOrDefault(u => u.Email == email)!;
 
+                if (usuarioBuscado == null)
+                {
+                    bool confere = Criptografia.CompararHash(senha, usuarioBuscado!.Senha!);
+
+                    if (confere)
+                    {
+                        return usuarioBuscado;
+                    }
+                }
+                return null!;
             }
             catch (Exception)
             {
